@@ -6,8 +6,8 @@ AmigaOS unsupports multi-byte character sets which include Japanese, Korean and 
 So, I decided to display Japanese multi-byte characters as graphical images by sophisticated and powerful graphic library in AmigaOS.
 
 
-TIPS
-<SCROLL>
+1. TIPS
+1.1 <SCROLL>
 
 Left mouse button scrolls down 1 page.
 
@@ -20,7 +20,7 @@ Up-arrow   key scrolls up   1 line.
 Down-arrow key scrolls down 1 line.
 
 
-<AKFontMenu>
+1.2 <AKFontMenu>
 
 AKankFont submenu changes ank font.
 
@@ -29,7 +29,7 @@ AKkanjiFont submenu changes kanji font.
 (But AK kanji font is only K14_KANJI_16* now.)
 
 
-<more>
+1.3 <more>
 
 NTV can start from CLI,too.
 
@@ -39,7 +39,7 @@ You can read Japanese Shift-JIS text more easily!
 
 
 
-SPECIAL THANKS
+2. SPECIAL THANKS
 
 <AKFONT>
 
@@ -54,9 +54,10 @@ The first version of NTV installer was written by Joe Yamasaki.
 
 
 
-HISTORY
+3. HISTORY
 
    ver0.1   930709 First code.
+   
    ver0.2   930711 some bug fixed, readable MSDOS text.
    
    ver0.3   930711 some bug fixed, readable ProDOS,Mac OS text.
@@ -88,11 +89,11 @@ HISTORY
    ------   200119 Commit to GitHub.
 
 
-FUTURE
+4. FUTURE
 
 NTV could display UTF-8 texts on AmigaOS3.1.x .
 
 
-AUTHOR
+5. AUTHOR
 
 Shinji Miyoshi  shinji080@amiga.ne.jp  @miyoshiamigan
