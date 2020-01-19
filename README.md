@@ -7,7 +7,7 @@ So, I decided to display Japanese multi-byte characters as graphical images by s
 <br>
 Tips<br>
 <table>
-SCROLL<br>
+1. SCROLL<br>
     Left mouse button scrolls down 1 page.<br>
     PgUp       key scrolls up   1 page.<br>
     PgDn       key scrolls down 1 page.<br>
