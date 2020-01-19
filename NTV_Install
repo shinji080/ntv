@@ -1,0 +1,174 @@
+
+;=======================================================
+;
+;Install Script for NTV
+;
+;$Ver: 0.10 (Oct 31 1995)
+;      0.14 (Mar 30 1996) for Hamamatsu Convention
+;      0.15 (Apr 8  1996) addition path command for user-startup.
+;      0.16 (Jan 19 2020) update E-mail address for commiting on GitHub.
+;
+;NTV - Nihongo(Japanese) Text Viewer
+;written by Shinji Miyoshi<shinji080@amiga.ne.jp>
+;this script was written by Joe Yamasaki, and modified  by Shinji Miyoshi.
+;
+;=======================================================
+
+;*******************************************************
+;
+;  Initialize...
+;
+;*******************************************************
+
+;=======================================================
+; E-mail address
+;=======================================================
+
+(set #mid "<shinji080@amiga.ne.jp>")
+
+;=======================================================
+; NTV current version's sub-directory
+;=======================================================
+
+(set #ntv-source ("ntv11"))
+
+;=======================================================
+; sub-directory info file.
+;=======================================================
+
+(set #info-source (cat #ntv-source ".info"))
+
+;=======================================================
+;  NTV Install drawer.
+;=======================================================
+
+(set @default-dest ("SYS:tools"))
+
+;*******************************************************
+;
+;  Main
+;
+;*******************************************************
+
+;=======================================================
+;  Wellcome massege.
+;=======================================================
+
+(message "\n\nWELCOME TO INSTALLATION OF\n\nNTV\n"
+         "Nihongo(Japanese) Text Viewer\n1.1\n\nby\nShinji\n"
+         #mid
+         )
+
+;=======================================================
+;  OS Version check.
+;=======================================================
+
+(if (< (getversion "LIBS:version.library") (* 37 65536))
+        (abort "NTV needs Kickstart 2.04 or higher.\n") )
+
+;=======================================================
+;  Dest saki wo sentaku.
+;=======================================================
+
+(complete 0)
+(set @default-dest
+            (askdir
+                (prompt "Where do you want to install NTV?\nA drawer will be created.")
+                (help "NTV takes 600KB of disk space.")
+                (default @default-dest)
+            )
+)
+(set #ntv_dest (tackon @default-dest #ntv-source)) ;Install saki wo set suru.
+
+;=======================================================
+;  main program wo copy suru.
+;=======================================================
+
+(complete 50)
+(copyfiles
+        (prompt "Copying NTV program and sources.")
+        (help "Programs,Souces and Documents "
+              "will be copied to where you choosed.\n"
+        )
+        (source #ntv-source)
+        (dest #ntv_dest)
+        (infos)
+        (confirm)
+        (all)
+)
+
+;=======================================================
+;  Copy Shift-JIS fonts.
+;=======================================================
+
+(complete 75)
+(copyfiles
+        (prompt "Copying Japanese Shift-JIS fonts")
+        (help "Japanese fonts MUST be copied to FONTS:.\n")
+        (source "fonts")
+        (dest "FONTS:")
+        (infos)
+        (confirm)
+        (all)
+)
+
+;=======================================================
+;  Copy to ramdisk,too.
+;=======================================================
+;
+;(set #ntv_hontai (tackon #ntv-source "ntv"))
+;
+;(message #ntv_hontai)
+;
+;(copyfiles
+;        (source #ntv_hontai)
+;        (dest "ram disk:")
+;)
+
+;=======================================================
+;  Add NTV's PATH in S:user-startup
+;=======================================================
+;
+;(complete 90)
+;(startup "NTV"
+;        (prompt
+;                "One line to be added to S:user-startup.")
+;        (help "  It will add only Assign command, no need to fear and easy to remove."
+;              "This command makes you can run ntv anywhere.")
+;        (command "Assign C: \"" #ntv_dest "\" add\n")
+;)
+
+;=======================================================
+;  Debugging lines.No needs to use.
+;=======================================================
+
+;(message (cat "run \"" (tackon #ntv_dest "ntv\" \"") (tackon #ntv_dest "NTV.JTXT\"")))
+;(message (cat "run path \"" #ntv_dest "\" add"))
+;(message (cat "path \"" #ntv_dest "\" add"))
+;(message "run ntv ntv.jtxt")
+;(run "run Assign C: \"" #ntv_dest "\" add\n")
+
+;=======================================================
+;  Display NTV.JTXT.
+;=======================================================
+
+(run (cat "run \"" (tackon #ntv_dest "ntv\"  \"") (tackon #ntv_dest "NTV.JTXT\"")))
+
+;=======================================================
+;  Closing message.
+;=======================================================
+
+(complete 100)
+
+(message "Installation completed."
+         "You can reach the auther of NTV at "
+         #mid "."
+         "Any suggestions and reports will be "
+         "welcomed and reflected next version."
+         "This install script was written by "
+         "Joe Yamasaki "
+         )
+
+;*******************************************************
+; END...
+;*******************************************************
