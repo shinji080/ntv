@@ -5,9 +5,9 @@ NTV version 1.1 can only Shift-JIS Japanese character set which is widely used i
 AmigaOS unsupports multi-byte character sets which include Japanese, Korean and Chinese.<br>
 So, I decided to display Japanese multi-byte characters as graphical images by sophisticated and powerful graphic library in AmigaOS.<br>
 <br>
-Tips<br>
+1.Tips<br>
 <table>
-1. SCROLL<br>
+SCROLL<br>
     Left mouse button scrolls down 1 page.<br>
     PgUp       key scrolls up   1 page.<br>
     PgDn       key scrolls down 1 page.<br>
