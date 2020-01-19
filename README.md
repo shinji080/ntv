@@ -7,6 +7,7 @@ So, I decided to display Japanese multi-byte characters as graphical images by s
 
 
 1. TIPS
+
 1.1 SCROLL
 
 Left mouse button scrolls down 1 page.
