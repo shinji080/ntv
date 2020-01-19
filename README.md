@@ -7,7 +7,7 @@ So, I decided to display Japanese multi-byte characters as graphical images by s
 
 
 1. TIPS
-1.1 <SCROLL>
+1.1 SCROLL
 
 Left mouse button scrolls down 1 page.
 
@@ -20,7 +20,7 @@ Up-arrow   key scrolls up   1 line.
 Down-arrow key scrolls down 1 line.
 
 
-1.2 <AKFontMenu>
+1.2 AKFontMenu
 
 AKankFont submenu changes ank font.
 
@@ -29,7 +29,7 @@ AKkanjiFont submenu changes kanji font.
 (But AK kanji font is only K14_KANJI_16* now.)
 
 
-1.3 <more>
+1.3 misc.
 
 NTV can start from CLI,too.
 
@@ -41,14 +41,14 @@ You can read Japanese Shift-JIS text more easily!
 
 2. SPECIAL THANKS
 
-<AKFONT>
+2-1. AKFONT
 
 K14_KANJI_16A,K14_KANJI_16B,K14_ank_16 font file is from 
 
 AK-series Nihongo applications that are made by Masashi Tsuda.
 
 
-<INSTALLER>
+2.2 INSTALLER
 
 The first version of NTV installer was written by Joe Yamasaki.
 
