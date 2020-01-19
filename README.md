@@ -5,6 +5,7 @@ NTV version 1.1 can only Shift-JIS Japanese character set which is widely used i
 AmigaOS unsupports multi-byte character sets which include Japanese, Korean and Chinese.
 So, I decided to display Japanese multi-byte characters as graphical images by sophisticated and powerful graphic library in AmigaOS.
 
+
 TIPS
 <SCROLL>
 
@@ -37,6 +38,7 @@ So, try to start from DirectoryOpus.
 You can read Japanese Shift-JIS text more easily!
 
 
+
 SPECIAL THANKS
 
 <AKFONT>
@@ -49,6 +51,7 @@ AK-series Nihongo applications that are made by Masashi Tsuda.
 <INSTALLER>
 
 The first version of NTV installer was written by Joe Yamasaki.
+
 
 
 HISTORY
@@ -84,9 +87,11 @@ HISTORY
    
    ------   200119 Commit to GitHub.
 
+
 FUTURE
 
 NTV could display UTF-8 texts on AmigaOS3.1.x .
+
 
 AUTHOR
 
