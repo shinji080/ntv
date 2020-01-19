@@ -6,32 +6,53 @@ AmigaOS unsupports multi-byte character sets which include Japanese, Korean and 
 So, I decided to display Japanese multi-byte characters as graphical images by sophisticated and powerful graphic library in AmigaOS.
 
 TIPS
-  <SCROLL>
-    Left mouse button scrolls down 1 page.
-    PgUp       key scrolls up   1 page.
-    PgDn       key scrolls down 1 page.
-    Up-arrow   key scrolls up   1 line.
-    Down-arrow key scrolls down 1 line.
+<SCROLL>
 
-  <AKFontMenu>
-    AKankFont submenu changes ank font.
-    AKkanjiFont submenu changes kanji font.
-    (But AK kanji font is only K14_KANJI_16* now.)
+Left mouse button scrolls down 1 page.
 
-  <more>
-    NTV can start from CLI,too.
-    So, try to start from DirectoryOpus.
-    You can read Japanese Shift-JIS text more easily!
-        
+PgUp       key scrolls up   1 page.
+
+PgDn       key scrolls down 1 page.
+
+Up-arrow   key scrolls up   1 line.
+
+Down-arrow key scrolls down 1 line.
+
+
+<AKFontMenu>
+
+AKankFont submenu changes ank font.
+
+AKkanjiFont submenu changes kanji font.
+
+(But AK kanji font is only K14_KANJI_16* now.)
+
+
+<more>
+
+NTV can start from CLI,too.
+
+So, try to start from DirectoryOpus.
+
+You can read Japanese Shift-JIS text more easily!
+
+
 SPECIAL THANKS
-  <AKFONT>
-    K14_KANJI_16A,K14_KANJI_16B,K14_ank_16 font file is from 
-    AK-series Nihongo applications that are made by Masashi Tsuda.
 
-  <INSTALLER>
-    The first version of NTV installer was written by Joe Yamasaki.s
+<AKFONT>
+
+K14_KANJI_16A,K14_KANJI_16B,K14_ank_16 font file is from 
+
+AK-series Nihongo applications that are made by Masashi Tsuda.
+
+
+<INSTALLER>
+
+The first version of NTV installer was written by Joe Yamasaki.
+
 
 HISTORY
+
    ver0.1   930709 First code.
    ver0.2   930711 some bug fixed, readable MSDOS text.
    
@@ -64,7 +85,9 @@ HISTORY
    ------   200119 Commit to GitHub.
 
 FUTURE
-    NTV could display UTF-8 texts on AmigaOS3.1.x .
+
+NTV could display UTF-8 texts on AmigaOS3.1.x .
 
 AUTHOR
-    Shinji Miyoshi  shinji080@amiga.ne.jp  @miyoshiamigan
+
+Shinji Miyoshi  shinji080@amiga.ne.jp  @miyoshiamigan
