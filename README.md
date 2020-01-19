@@ -59,9 +59,9 @@ INSTALLER<br>
    ------   200119 Commit to GitHub.<br>
 </table>
 <br>
-4. FUTURE<br>
+4. Future<br>
     NTV could display UTF-8 texts on AmigaOS3.1.x .<br>
 <br>
-5. AUTHOR<br>
+5. Author<br>
     Shinji Miyoshi  shinji080@amiga.ne.jp  Twitter @miyoshiamigan<br>
 <br>
