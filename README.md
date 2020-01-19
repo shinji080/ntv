@@ -34,19 +34,33 @@ SPECIAL THANKS
 HISTORY
    ver0.1   930709 First code.
    ver0.2   930711 some bug fixed, readable MSDOS text.
+   
    ver0.3   930711 some bug fixed, readable ProDOS,Mac OS text.
+   
    ver0.4   930820 some bug.fixed, use K14.font,S:AKTERM.CFG              
+   
    ver0.4a  931002 not display 0x0d for *Hisada-san.
+   
    ver0.4b  931023 able to read a text by setting default tools in icon.
+   
    ver0.50  931028 select(right mouse) button is page-up. add short-cut key for 'open' and 'quit'. 
+   
    ver0.51  931219 fixed bug.
+   
    ver0.6   940524 change menu text from Topaz to Screen Font. bug fixed. 
+   
    ver0.7   940528 bug fixed for refresh window and more.
+   
    ver0.8   940602 added AKFont Menu.
+   
    ver0.90  940611 added line scroll.
+   
    ver0.91  940611 CR-LF of MSDOS text can feed only ONE line.   
+   
    ver1.0   941228 When S:AKTerm.CFG is not found, could run default-mode.
+   
    ver1.1   951120 If under default-mode, K14 fonts are in FONTS: drawer.
+   
    ------   200119 Commit to GitHub.
 
 FUTURE
