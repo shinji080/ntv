@@ -44,7 +44,7 @@ INSTALLER<br>
    ver0.1   930709 First code.<br>
    ver0.2   930711 some bug fixed, readable MSDOS text.<br>
    ver0.3   930711 some bug fixed, readable ProDOS,Mac OS text.<br>
-   ver0.4   930820 some bug.fixed, use K14.font,S:AKTERM.CFG.<br>    
+   ver0.4   930820 some bug.fixed, use K14.font,S:AKTERM.CFG.<br>
    ver0.4a  931002 not display 0x0d for Hisada-san.<br>
    ver0.4b  931023 able to read a text by setting default tools in icon.<br>
    ver0.5   931028 select(right mouse) button is page-up, add short-cut key for 'open' and 'quit'.<br> 

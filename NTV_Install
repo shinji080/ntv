@@ -128,15 +128,15 @@
 ;=======================================================
 ;  Add NTV's PATH in S:user-startup
 ;=======================================================
-;
-;(complete 90)
-;(startup "NTV"
-;        (prompt
-;                "One line to be added to S:user-startup.")
-;        (help "  It will add only Assign command, no need to fear and easy to remove."
-;              "This command makes you can run ntv anywhere.")
-;        (command "Assign C: \"" #ntv_dest "\" add\n")
-;)
+
+(complete 90)
+(startup "NTV"
+        (prompt
+                "One line to be added to S:user-startup.")
+        (help "  It will add only Assign command, no need to fear and easy to remove."
+              "This command makes you can run ntv anywhere.")
+        (command "Assign C: \"" #ntv_dest "\" add\n")
+)
 
 ;=======================================================
 ;  Debugging lines.No needs to use.
