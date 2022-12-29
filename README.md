@@ -63,5 +63,5 @@ INSTALLER<br>
     NTV could display UTF-8 texts on AmigaOS3.1.x .<br>
 <br>
 5. Author<br>
-    Shinji Miyoshi  shinji080@amiga.ne.jp  Twitter @miyoshiamigan<br>
+    Shinji Miyoshi  miyoshi@amiga.ne.jp  Twitter @miyoshiamigan@mstdn.jp<br>
 <br>
